@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay'
 import Spinner from './Spinner'
 class App extends React.Component{
-  //Constructr to initialize state
+  //initialize state
   state={lat:null , errorMessage:''};
 
   componentDidMount(){
@@ -14,7 +14,6 @@ class App extends React.Component{
     
   }
   renderContent(){
-
     if( this.state.errorMessage && !this.state.lat){
       return <div>Error :{this.state.errorMessage}</div>;
       }
@@ -33,9 +32,10 @@ class App extends React.Component{
   //requirement of react
   render(){
       return <div className="border-red">
-       { this.renderContent()}
+        {this.renderContent()}
       </div>
-}}
+}
+}
 ReactDOM.render(
   <App/>,
   document.querySelector('#root')

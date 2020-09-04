@@ -12,18 +12,24 @@ const getSeason =(lat ,month) =>{
 	}
 
 }
+
 const SeasonDisplay=props=>{
-const season =getSeason(props.lat,new Date().getMonth());
-const {text,iconName}=seasonConfig[season]
+ const season =getSeason(props.lat,new Date().getMonth());
+ 
+ const {text,iconName}=seasonConfig[season]
+ var a=`${text}`
 	return(<div className={`season-display ${season}`}>
 	<i className={`icon-left icon ${iconName} massive`} />
 	<h1>
-		{text}
+		{a}
+		<br/>
+		 
 		</h1>
 		<i className={`icon-right icon ${iconName} massive`} />
 		
 		</div>
 		);
+		
 };
 
 
