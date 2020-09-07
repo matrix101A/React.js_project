@@ -8,7 +8,9 @@ onInputChange(event){
     console.log(event.target.value);
    
 }
-
+onInputClick(){
+    console.log('I was clicked ')
+}
     render(){
         return (<div className=" ui segment ">
         <form className="ui form ">
