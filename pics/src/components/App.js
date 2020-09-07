@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import SerachBar from './SearchBar';
-const App=()=>
-{
+
+class App extends Component{
+
+    state={term:""}
+
+    onFormSubmit=(text)=>
+    {               
+       
+        console.log(text)
+    }
+
+    render(){
     return (<div className="ui container" style={{marginTop:'10px'}}>
-    <SerachBar/>
+    <SerachBar
+        onSubmit = {this.onFormSubmit}
+    />
      </div>);
-};
+        
+    }
+}
+
 
 
 export default App

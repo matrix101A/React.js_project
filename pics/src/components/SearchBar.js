@@ -4,19 +4,26 @@ import React from 'react';
 
 class SearchBar extends React.Component{
   
-onInputChange(event){
-    console.log(event.target.value);
-   
-}
-onInputClick(){
-    console.log('I was clicked ')
-}
+    state={term:""} 
+
+    onFormSubmit=(event)=>
+    {               
+        event.preventDefault()
+        this.props.onSubmit(this.state.term)
+       
+    }
+
     render(){
         return (<div className=" ui segment ">
-        <form className="ui form ">
+        <form onSubmit={this.onFormSubmit} className="ui form ">
             <div className="field">
             <label >Image Search</label>
-            <input id="inp" type="text" onChange={this.onInputChange} onClick={this.onInputClick}/>
+            <input
+             id="inp" 
+             value={this.state.term}
+             type="text" 
+             onChange={(e)=>{this.setState({term:e.target.value})}}    
+             />
             </div>
         </form>
         </div>);
