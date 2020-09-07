@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import SerachBar from './SearchBar';
+import unsplash from '../api/unsplash'
+
 
 class App extends Component{
-
-    state={term:""}
-
-    onFormSubmit=(text)=>
+    state={images:[]}
+ onFormSubmit=async(text)=>
     {               
-       
-        console.log(text)
+        const response= await unsplash
+        .get('/search/photos',{
+            params:{
+                query:text
+            },
+           
+          })
+
+          this.setState({images:response.data.results});
     }
 
     render(){
@@ -16,6 +23,7 @@ class App extends Component{
     <SerachBar
         onSubmit = {this.onFormSubmit}
     />
+    Found: {this.state.images.length} Images
      </div>);
         
     }
