@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SerachBar from './SearchBar';
 import unsplash from '../api/unsplash'
-
+import ImageList from './ImageList'
 
 class App extends Component{
     state={images:[]}
@@ -23,7 +23,9 @@ class App extends Component{
     <SerachBar
         onSubmit = {this.onFormSubmit}
     />
-    Found: {this.state.images.length} Images
+    <ImageList
+    images= {this.state.images}
+    />
      </div>);
         
     }
