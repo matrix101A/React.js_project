@@ -1,0 +1,17 @@
+.songDetail {
+  border: 5px solid grey;
+  background-color: black;
+  color: whitesmoke;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+p {
+  font-size: large;
+  font-weight: 800;
+  font-family: "Courier New", Courier, monospace;
+}
+.details {
+  text-align: center;
+  margin: 0px auto;
+}
