@@ -1,7 +1,3 @@
 import { combineReducers } from "redux";
-
-export default combineReducers({
-  hey: () => {
-    return "HEllo";
-  },
-});
+import postsReducer from "./postsReducer";
+export default combineReducers({ posts: postsReducer });
