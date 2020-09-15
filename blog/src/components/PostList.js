@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { fetchPosts, fetchPostAndUsers } from "../actions";
+import { fetchPostAndUsers } from "../actions";
 import { connect } from "react-redux";
 import UserHeader from "./UserHeader";
 class PostList extends Component {
