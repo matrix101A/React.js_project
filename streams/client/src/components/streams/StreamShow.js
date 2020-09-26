@@ -1,7 +1,7 @@
 import React from "react";
 
 function StreamShow() {
-  return <div>HEllo YOu are at stream show</div>;
+  return <div>Hello</div>;
 }
 
 export default StreamShow;

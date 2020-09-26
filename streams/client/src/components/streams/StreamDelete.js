@@ -1,7 +1,12 @@
 import React from "react";
-
+import Modal from "../Modal";
 function StreamDelete() {
-  return <div>HEllo YOu are at stream delete</div>;
+  return (
+    <div>
+      <h1>Hello my name is abhinav </h1>
+      <Modal />
+    </div>
+  );
 }
 
 export default StreamDelete;
