@@ -5,7 +5,6 @@ import { editStream } from "../../actions/index";
 class StreamEdit extends Component {
   onSubmit = (formValues) => {
     let id = this.props.match.params.id;
-    console.log(this.props);
     this.props.editStream(id, formValues);
   };
   render() {

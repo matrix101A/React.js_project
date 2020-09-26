@@ -1,52 +1,16 @@
 {
   "streams": [
     {
-      "title": "dsfssdsf",
-      "description": "sdfds",
+      "title": "This is Among us ",
+      "description": "By abhinav tiwari ",
       "userId": "110459802903234452138",
-      "id": 1,
-      "formValues": {
-        "title": "Hello , do you sense a change ?",
-        "description": "sdfds"
-      }
+      "id": 1
     },
     {
-      "title": "sd",
-      "description": "dsfds",
-      "userId": "110459802903234452138",
-      "id": 2,
-      "formValues": {
-        "title": "sd",
-        "description": "dsfds"
-      }
-    },
-    {
-      "title": "ewf",
-      "description": "ewfew",
-      "userId": "110459802903234452138",
-      "id": 3,
-      "formValues": {
-        "title": "ewf",
-        "description": "ewfewsds"
-      }
-    },
-    {
-      "title": "ds",
-      "description": "sdfs",
-      "userId": "110459802903234452138",
-      "id": 4
-    },
-    {
-      "title": "YO ",
-      "description": "This was done using a patch request ",
-      "userId": "110459802903234452138",
-      "id": 5
-    },
-    {
-      "title": "This was created on a warm  saturday morning ",
-      "description": "YOO ",
-      "userId": "110459802903234452138",
-      "id": 6
+      "title": "hello ",
+      "description": "how are you ",
+      "userId": null,
+      "id": 2
     }
   ]
 }

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Icon } from "semantic-ui-react";
 import { signOut, signIn } from "../actions";
 import { connect } from "react-redux";
 class GoogleAuth extends Component {

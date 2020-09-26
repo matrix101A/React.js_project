@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Field, formValues, reduxForm } from "redux-form";
+import { Field, reduxForm } from "redux-form";
 class StreamForm extends Component {
   onSubmit = (formValues) => {
     this.props.onSubmit(formValues);
